@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script>
+        function xyz()
+        {
+             //window.print()
+        }
+    </script>
+    <style>
+        .font1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body onload="xyz()">
+    <h3>For Student Copy</h3>
+    <table width="500" height="500" border="1" align="center">
+        <thead>
+            <tr>
+                <th colspan="4" align="center">SUNNY INSTITUTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Date</th>
+                <td th:text="${fees.getDate()}"></td>
+                <th>Candidate Name</th>
+                <td th:text="${student.getName()}"></td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td th:text="${course.getName()}"></td>
+                <th>Course Duration</th>
+                <td th:text="${course.getDuration()}"></td>
+            </tr>
+            <tr>
+                <th>Submitted Amount</th>
+                <td th:text="${fees.getAmount()}"></td>
+                <th>Total Fees</th>
+                <td th:text="${course.getFees()}"></td>
+            </tr>
+            <tr>
+                <td>Payment Mode</td>
+                <th>Cash / UPI / NET Banking</th>
+                <td rowspan="2" colspan="2">
+                    <sup style="height: 100%; display: flex; align-items: end; justify-content: end;">Seal & Signature</sup>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    
+</body>
+
+</html>         
